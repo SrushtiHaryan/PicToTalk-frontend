@@ -1,0 +1,21 @@
+.dictionary-page-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: rgb(220, 236, 255);
+    padding-bottom:2rem;
+
+    
+}
+
+.dictionary-page-container h2{
+    font-size:2rem;
+}
+
+.flash-card-container{
+    display:flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
