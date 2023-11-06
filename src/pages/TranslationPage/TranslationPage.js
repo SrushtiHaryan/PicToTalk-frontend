@@ -29,7 +29,7 @@ const TranslationPage = () => {
 
     try {
       // Send the image to the backend for processing
-      const response = await axios.post('https://backend-service-ptt-fjq6ivbxiq-uc.a.run.app/process_image', formData, {
+      const response = await axios.post('https://pictotalk-image-nflj4cqiua-el.a.run.app/process_image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -82,7 +82,7 @@ const TranslationPage = () => {
           <option value="hi">Hindi</option>
           <option value="ja">Japanese</option>
           <option value="de">German</option>
-          <option value="zn">Chinese</option>
+          <option value="cmn">Chinese</option>
         </select>
         <button className="translate-btn" onClick={sendImageForProcessing}>
           Translate

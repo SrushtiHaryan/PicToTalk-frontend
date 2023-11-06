@@ -26,7 +26,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-export default function FlashCard() {
+export default function FlashCard(props) {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -46,7 +46,7 @@ export default function FlashCard() {
                         <MoreVertIcon />
                     </IconButton>
                 }
-                title="French"
+                title={props.detectedLang}
                 subheader="September 14, 2016"
             />
             <CardMedia
@@ -57,7 +57,7 @@ export default function FlashCard() {
             />
             <CardContent>
                 <Typography variant="body2" color="text.primary">
-                    Ouvert Bienvenue
+                    {detectedText}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
@@ -75,7 +75,7 @@ export default function FlashCard() {
                 <CardContent>
 
                     <Typography paragraph>
-                        Open Welcome
+                        {translatedText}
                     </Typography>
 
                 </CardContent>
